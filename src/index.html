@@ -8,10 +8,30 @@
 	<title>Favorite</title>
 </head>
 
-
-
 <body>
+	<form action="telegram.php" method="POST">
+		<div class="name-wrapper">
+			<label>Name</label>
+			<input type="name" name="name" placeholder="">
+		</div>	
 
+		<div class="phone-wrapper">
+			<label>Телефон</label>
+			<input type="phone" name="phone">
+		</div>
+
+		<div class="email-wrapper">
+			<label>Email</label>
+			<input type="email" name="email">
+		</div>
+
+		<div class="message-wrapper">
+			<label>Message</label>
+			<textarea name="message"></textarea>
+		</div>
+		<button type="submit">Send</button>
+	</form>
+	
 </body>
 
 </html>

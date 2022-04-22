@@ -13,6 +13,9 @@ body {
 	color: $text;
 	background: $bg;
 	font-family: 'Manrope', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	&::-webkit-scrollbar {
 		width: 0;
 	}
@@ -28,4 +31,51 @@ body {
 ._container {
 	max-width: 1326px;
 	margin: 0 auto;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	font-size: 1rem;
+	min-width: 500px;
+	font-weight: 500;
+	label {
+		margin-bottom: 5px;
+	}
+	input {
+		height: 35px;
+		outline: none;
+		border: none;
+		font-family: 'Manrope', sans-serif;
+	}
+	textarea {
+		height: 100px;
+		resize: none;
+		outline: none;
+		border: none;
+		font-family: 'Manrope', sans-serif;
+	}
+	button {
+		height: 35px;
+		margin-top: 20px;
+	}
+}
+.name-wrapper {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 15px;
+}
+.phone-wrapper {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 15px;
+}
+.email-wrapper {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 15px;
+}
+.message-wrapper {
+	display: flex;
+	flex-direction: column;
 }
